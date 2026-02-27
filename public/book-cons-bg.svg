@@ -1,0 +1,45 @@
+<svg width="210" height="76" viewBox="0 0 210 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.68" filter="url(#filter0_f_4_11)">
+<rect x="25.8" y="25.8" width="158" height="24" rx="12" fill="url(#paint0_radial_4_11)" fill-opacity="0.5"/>
+</g>
+<rect x="14.8" y="11.8" width="181" height="32" rx="16" fill="#313138" stroke="url(#paint1_linear_4_11)"/>
+<mask id="mask0_4_11" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="11" width="183" height="34">
+<rect x="14.8" y="11.8" width="181" height="32" rx="16" fill="#313138" stroke="url(#paint2_linear_4_11)"/>
+</mask>
+<g mask="url(#mask0_4_11)">
+<g filter="url(#filter1_f_4_11)" style="mix-blend-mode:color-dodge">
+<ellipse cx="107.3" cy="4.7099" rx="219.5" ry="61" fill="url(#paint3_radial_4_11)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_4_11" x="3.8147e-06" y="-1.14441e-05" width="209.6" height="75.6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.9" result="effect1_foregroundBlur_4_11"/>
+</filter>
+<filter id="filter1_f_4_11" x="-137.3" y="-81.3901" width="489.2" height="172.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.55" result="effect1_foregroundBlur_4_11"/>
+</filter>
+<radialGradient id="paint0_radial_4_11" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(104.8 37.8) rotate(90) scale(18.5152 2.26322)">
+<stop stop-color="#26DFD4"/>
+<stop offset="1" stop-color="#157973"/>
+</radialGradient>
+<linearGradient id="paint1_linear_4_11" x1="105.3" y1="11.8" x2="106.515" y2="43.7901" gradientUnits="userSpaceOnUse">
+<stop stop-color="#666666"/>
+<stop offset="0.524038" stop-color="#31374B"/>
+<stop offset="1" stop-color="#25D7C9"/>
+</linearGradient>
+<linearGradient id="paint2_linear_4_11" x1="105.3" y1="11.8" x2="106.515" y2="43.7901" gradientUnits="userSpaceOnUse">
+<stop stop-color="#666666"/>
+<stop offset="0.524038" stop-color="#31374B"/>
+<stop offset="1" stop-color="#25D7C9"/>
+</linearGradient>
+<radialGradient id="paint3_radial_4_11" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(107.3 4.7099) scale(219.5 61)">
+<stop stop-color="#26EFE4"/>
+<stop offset="0.725962" stop-color="#0A5840"/>
+<stop offset="1" stop-color="#313138"/>
+</radialGradient>
+</defs>
+</svg>
