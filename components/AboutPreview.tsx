@@ -2,6 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+const ABOUT_PREVIEW_VIDEO_SRC = '/about-preview-540x540-60fps.mp4';
+
 export default function AboutPreview() {
   return (
     <section className="section-padding about-preview-section">
@@ -9,8 +11,9 @@ export default function AboutPreview() {
         <div className="about-preview-grid">
           <div className="about-preview-media">
             <video
+              key={ABOUT_PREVIEW_VIDEO_SRC}
               className="about-preview-video"
-              src="/about-preview-video.mp4"
+              src={ABOUT_PREVIEW_VIDEO_SRC}
               autoPlay
               loop
               muted
