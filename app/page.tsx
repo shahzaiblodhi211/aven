@@ -11,8 +11,8 @@ export default function Home() {
     <main style={{ paddingTop: 'var(--header-height)' }}>
       <Hero />
       <TechMarquee />
-      <WorkProcess />
       <AboutPreview />
+      <WorkProcess />
       <MonetaServices />
       <PromoBanner />
       <Footer />

@@ -1,43 +1,46 @@
 "use client";
 import React from 'react';
+import Link from 'next/link';
 
 export default function AboutPreview() {
   return (
     <section className="section-padding about-preview-section">
       <div className="container">
-        <div className="section-header">
-          <span className="section-subtitle">About Us</span>
-          <h2>Architects of Financial Clarity</h2>
-        </div>
-
-        <div className="about-grid">
-          <div className="about-img-wrapper">
-            <img src="/about.png" alt="Aven Consulting" />
+        <div className="about-preview-grid">
+          <div className="about-preview-media">
+            <video
+              className="about-preview-video"
+              src="/about-preview-video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
           </div>
 
-          <div className="about-content">
-            <h3>Expertise meets Technology</h3>
-            <p>
-              Aven operates as a virtual accounts department for businesses in the United States and the
-              United Kingdom.
+          <div className="about-preview-content">
+            <h2 className="about-preview-title">
+              Helping Entrepreneurs Make
               <br />
-              <br />
-              We help companies set up the right accounting systems, manage day-to-day bookkeeping, and
-              maintain accurate financial records—so owners and operators always know where their business
-              stands.
-              <br />
-              <br />
-              By combining accounting expertise with modern financial software, we bring structure,
-              consistency, and accountability to your books—without the overhead of hiring an in-house team.
+              Rational Decisions
+            </h2>
+            <p className="about-preview-text">
+              AVEN provides remote finance support for businesses that want clean records, clear reporting,
+              and a system that stays under control.
             </p>
-
-            <div style={{ marginTop: 18 }}>
-              <button
-                className="btn-secondary"
-              >
-                Meet The Team
-              </button>
-            </div>
+            <p className="about-preview-text">
+              We work as an extension of your team. We set up the right accounting tools, keep financial
+              records current, and maintain a consistent reporting cadence so you always know where your
+              business stands.
+            </p>
+            <p className="about-preview-text">
+              We support modern accounting systems including <strong>QuickBooks</strong>, Xero, Zoho, Odoo,
+              and ERP environments where required. Scope is defined upfront and delivered through a repeatable
+              workflow.
+            </p>
+            <Link href="/appointment" className="btn-beam">
+              Book Consultation
+            </Link>
           </div>
         </div>
       </div>

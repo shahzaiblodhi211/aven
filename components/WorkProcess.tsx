@@ -1,12 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function WorkProcess() {
     return (
         <section className="work-process-section">
             <div className="container">
-                <div className="section-header">
-                    <span className="section-subtitle">THE STEPS OF</span>
-                    <h2>Our Work Process</h2>
+                <div className="wp-top">
+                    <h2 className="wp-main-title">Our Work Process</h2>
+                    <Link href="/appointment" className="wp-cta-link">
+                        BOOK CONSULTATION <span aria-hidden="true">→</span>
+                    </Link>
                 </div>
 
                 <div className="wp-grid">
