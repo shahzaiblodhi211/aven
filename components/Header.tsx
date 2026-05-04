@@ -1,25 +1,38 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('home');
+  const pathname = usePathname();
+
+  const activeLink =
+    pathname === '/about'
+      ? 'about'
+      : pathname === '/services'
+        ? 'services'
+        : pathname === '/industries'
+          ? 'industries'
+          : pathname === '/appointment'
+            ? 'appointment'
+            : pathname === '/contact'
+              ? 'contact'
+              : 'home';
 
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleNavClick = (page: string) => {
-    setActiveLink(page);
+  const handleNavClick = () => {
     setIsMenuOpen(false);
   };
 
   return (
     <header>
       <div className="container">
-        <Link href="/" className="logo" onClick={() => handleNavClick('home')}>
+        <Link href="/" className="logo" onClick={handleNavClick}>
           <img src="/Aven-SVG.svg" alt="Aven Logo" width="100" height="auto" />
         </Link>
 
@@ -34,7 +47,7 @@ export default function Header() {
               <Link
                 href="/"
                 className={`nav-link ${activeLink === 'home' ? 'active' : ''}`}
-                onClick={() => handleNavClick('home')}
+                onClick={handleNavClick}
               >
                 Home
               </Link>
@@ -43,7 +56,7 @@ export default function Header() {
               <Link
                 href="/about"
                 className={`nav-link ${activeLink === 'about' ? 'active' : ''}`}
-                onClick={() => handleNavClick('about')}
+                onClick={handleNavClick}
               >
                 About Firm
               </Link>
@@ -52,7 +65,7 @@ export default function Header() {
               <Link
                 href="/services"
                 className={`nav-link ${activeLink === 'services' ? 'active' : ''}`}
-                onClick={() => handleNavClick('services')}
+                onClick={handleNavClick}
               >
                 Expertise
               </Link>
@@ -61,7 +74,7 @@ export default function Header() {
               <Link
                 href="/industries"
                 className={`nav-link ${activeLink === 'industries' ? 'active' : ''}`}
-                onClick={() => handleNavClick('industries')}
+                onClick={handleNavClick}
               >
                 Industries
               </Link>
@@ -70,7 +83,7 @@ export default function Header() {
               <Link
                 href="/appointment"
                 className={`nav-link ${activeLink === 'appointment' ? 'active' : ''}`}
-                onClick={() => handleNavClick('appointment')}
+                onClick={handleNavClick}
               >
                 Appointment
               </Link>
@@ -79,7 +92,7 @@ export default function Header() {
               <Link
                 href="/contact"
                 className={`nav-link ${activeLink === 'contact' ? 'active' : ''}`}
-                onClick={() => handleNavClick('contact')}
+                onClick={handleNavClick}
               >
                 Contact
               </Link>
